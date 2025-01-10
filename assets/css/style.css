@@ -425,7 +425,7 @@ header .btn-group {
 }
 
 .blog-card {
-  position: relative; /* Required for absolute positioning inside it */
+  position:relative; /* Required for absolute positioning inside it */
 }
 
 .btn.go-website {
@@ -1099,4 +1099,28 @@ footer .wrapper { text-align: center; }
 
   .footer-link { margin-bottom: 0.3rem; }
 
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 5fr 1fr; /* Content va Sidebar nisbati */
+  gap: 20px;
+  border-radius: 10px;
+}
+
+
+.sidebar {
+  background: var(--background-secondary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .topics, .sidebar .tags {
+  margin-bottom: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+  color: var(--foreground-primary);
 }

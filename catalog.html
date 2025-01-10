@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CodeRoad - can it everyone. </title>
+    
+        <!--
+        - favicon
+      -->
+        <link
+          rel="shortcut icon"
+          href="./assets/images/favicon.ico"
+          type="image/x-icon"
+        />
+    
+        <!--
+        - custom css link
+      -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    
+        <!--
+        - google font link
+      -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+<body class="dark-theme">
+  <header>
+    <header>
+        <div class="container">
+          <nav class="navbar">
+            <a href="#">
+              <img
+                src="./assets/images/edited.png"
+                alt="SimpleBlog logo"
+                width="150"
+                class="logo-light"
+              />
+              <img
+                src="./assets/images/edited.png"
+                alt="SimpleBlog logo"
+                width="150"
+                class="logo-dark"
+              />
+            </a>
+  
+            <div class="btn-group">
+              <button class="theme-btn theme-btn-mobile light">
+                <ion-icon name="moon" class="moon"></ion-icon>
+                <ion-icon name="sunny" class="sun"></ion-icon>
+              </button>
+  
+              <button class="nav-menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+              </button>
+            </div>
+  
+            <div class="flex-wrapper">
+              <ul class="desktop-nav">
+                <li>
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+  
+                <li>
+                  <a href="#" class="nav-link">Catalog</a>
+                </li>
+  
+                <li>
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+              </ul>
+  
+              <button class="theme-btn theme-btn-desktop light">
+                <ion-icon name="moon" class="moon"></ion-icon>
+                <ion-icon name="sunny" class="sun"></ion-icon>
+              </button>
+            </div>
+  
+            <div class="mobile-nav">
+              <button class="nav-close-btn">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+  
+              <div class="wrapper">
+                <p class="h3 nav-title">Main Menu</p>
+  
+                <ul>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Catalog</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+  
+            </div>
+          </nav>
+        </div>
+      </header>
+
+  <main>
+
+    <div class="hero">
+    <div class="container">
+      <h1 class="h1">Explore Our Catalog</h1>
+      <p class="h3">Find the best websites by category or search for your favorite.</p>
+
+      <div class="filter-section">
+        <input type="text" id="searchBar" placeholder="Search websites..." class="filter-input">
+        <select id="categoryFilter" class="filter-input">
+          <option value="all">All Categories</option>
+          <option value="portfolio">Portfolio</option>
+          <option value="blog">Blog</option>
+          <option value="ecommerce">E-commerce</option>
+        </select>
+      </div>
+    </div>
+    </div>
+    <main class="main-layout">
+    <section class="content">
+    <div class="main" style="border-radius: 10px;">
+        <div class="container">
+      <div class="blog">
+        <div id="catalogItems" class="blog-card-group">
+            <!-- Dynamic items will be rendered here -->
+        </div>
+      </div>
+      </div>
+    </div>
+    </section>
+    <aside class="sidebar">
+    <div class="aside">
+        <div class="topics">
+          <h2 class="h2">Topics</h2>
+
+          <a href="#" class="topic-btn">
+            <div class="icon-box">
+              <ion-icon name="server-outline"></ion-icon>
+            </div>
+
+            <p>Database</p>
+          </a>
+
+          <a href="#" class="topic-btn">
+            <div class="icon-box">
+              <ion-icon name="accessibility-outline"></ion-icon>
+            </div>
+
+            <p>Accessibility</p>
+          </a>
+
+          <a href="#" class="topic-btn">
+            <div class="icon-box">
+              <ion-icon name="rocket-outline"></ion-icon>
+            </div>
+
+            <p>Web Performance</p>
+          </a>
+        </div>
+
+        <div class="tags">
+          <h2 class="h2">Tags</h2>
+
+          <div class="wrapper">
+            <button class="hashtag">#mongodb</button>
+            <button class="hashtag">#nodejs</button>
+            <button class="hashtag">#a11y</button>
+            <button class="hashtag">#mobility</button>
+            <button class="hashtag">#inclusion</button>
+            <button class="hashtag">#webperf</button>
+            <button class="hashtag">#optimize</button>
+            <button class="hashtag">#performance</button>
+          </div>
+        </div>
+        </aside>
+        </main>
+    </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-text">
+        &copy; 2025 CodeRoad. Made with ❤️ by developers. 
+        <a href="contact.html" class="footer-link">Contact us</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/catalog.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</body>
+</html>
